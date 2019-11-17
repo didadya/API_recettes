@@ -22,12 +22,54 @@ git clone https://github.com/didadya/API_recherche.git API_Recherche
 
 ### Installer le projet avec Maven
 
+Une fois le projet téléchargé, toujours dans le terminal, positionnez vous dans le projet en utilisant cette commande : 
+```
+cd API_Recherche
+```
+Puis, pour compiler et installer les jar’s nécessaire pour faire fonctionner l’API, utilisez la commande : 
+```
+mvn install
+```
+Durant ce traitement, Maven crée automatiquement le dossier "target" qui contient le programme compilé.
+
 ### Préparation de l'import dans Eclipse 
+
+Il faut maintenant créer les fichiers spécifiques à Eclipse, toujours à l'aide de Maven. En utilisant la commande : 
+```
+mvn eclipse:eclipse
+```
+Durant ce traitement, Maven crée les fichiers ".classpath" et ".projet" dont Eclipse a besoin.
 
 ### Import dans Eclipse
 
+On peut donc maintenant lancer Eclipse. Pour commencer, vérifiez que vous êtes sur la perspective *“java”*. Sinon, Pour l'avoir, il faut utiliser le menu *"Window > Open perspective > Java"*.
+
+On peut ensuite importer le projet dans Eclipse, pour cela il faut utiliser le menu *"File > Import > Existing Maven Projects"*
+
+Pour lancer l'API, clic droit sur le projet, puis *"Run as > Java Application>"* puis choisir *ApiRechercheApplication* dans *Matching items*.
 
 ## 3- Utilisation de l'API
 
+Pour pouvoir utiliser l'API, il faut d'abord créer la base de données (ce qu'on va voir par la suite) puis lancer le service (exécuter le projet).
+
+Voici les services de L'API :
+
+### Rechercher une recette en utilisant son libelle ou son niveau de difficulté
+```
+Méthode : GET
+Requête URL : http://localhost:8181/recettes/recherche/ + (Mot cle de recherche)
+Header : Key : Content-Type
+         Value : Application/json
+```
+
+Exemple d'URL pour chercher *Tartiflette* :  http://localhost:8181/recettes/recherche/tartiflette
+
+### Récuperer toutes les recettes
+```
+Méthode : GET
+Requête URL : http://localhost:8181/recettes
+Header : Key : Content-Type
+         Value : Application/json
+```
 
 ## 4- Mise en place de la BDD sous MySQL
