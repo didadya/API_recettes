@@ -12,10 +12,17 @@ Dans ce ce qui suit, on va voir l'installation et l'utilisation de l'api recherc
 ## 2- Installation de l'API
 
 ### Cloner le projet API_recherche
+Ouvrez CMD et positionnez-vous dans votre espace de travail, puis collez la commande suivante pour cloner le projet :
+```
+git clone https://github.com/didadya/API_recherche.git API_Recherche
+```
+**https://github.com/didadya/API_recherche.git** : est l’URL qui pointe vers le projet sur GitHub.
+
+**API_Recherche** : est le libelle du répertoire local où on va cloner le projet.
 
 ### Installer le projet avec Maven
 
-### Préparation de l'import dans Eclipse
+### Préparation de l'import dans Eclipse 
 
 ### Import dans Eclipse
 
