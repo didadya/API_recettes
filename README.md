@@ -73,3 +73,18 @@ Header : Key : Content-Type
 ```
 
 ## 4- Mise en place de la BDD sous MySQL
+
+Sous MySQL, Créez une base de données nommée "**db_recettes**".
+
+Ensuite, utilisez le script ci-dessous pour la création de la table ainsi que ses champs :
+```
+CREATE TABLE `recette` (
+  `id_recette` int(11) NOT NULL AUTO_INCREMENT,
+  `libelle` text,
+  `duree_cuissant` int(11) DEFAULT NULL,
+  `preparation` longtext,
+  `ingredients` longtext,
+  `niveau` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`id_recette`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8
+```
