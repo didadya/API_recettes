@@ -1,6 +1,6 @@
-# API_recherche
+# API_recettes
 
-Dans ce ce qui suit, on va voir l'installation et l'utilisation de l'api recherche de recettes de cuisine ansi que la mise en place de la base de données sous MySQL.
+Dans ce ce qui suit, on va voir l'installation et l'utilisation de l'API_recettes ansi que la mise en place de la base de données sous MySQL.
 
 ## 1- Prérequis
 * Installer Java JDK
@@ -11,20 +11,20 @@ Dans ce ce qui suit, on va voir l'installation et l'utilisation de l'api recherc
 
 ## 2- Installation de l'API
 
-### Cloner le projet API_recherche
+### Cloner le projet API_recettes
 Ouvrez CMD et positionnez-vous dans votre espace de travail, puis collez la commande suivante pour cloner le projet :
 ```
-git clone https://github.com/didadya/API_recherche.git API_Recherche
+git clone https://github.com/didadya/API_recettes.git API_Recettes
 ```
-**https://github.com/didadya/API_recherche.git** : est l’URL qui pointe vers le projet sur GitHub.
+**https://github.com/didadya/API_recettes.git** : est l’URL qui pointe vers le projet sur GitHub.
 
-**API_Recherche** : est le libelle du répertoire local où on va cloner le projet.
+**API_Recettes** : est le libelle du répertoire local où on va cloner le projet.
 
 ### Installer le projet avec Maven
 
 Une fois le projet téléchargé, toujours dans le terminal, positionnez vous dans le projet en utilisant cette commande : 
 ```
-cd API_Recherche
+cd API_Recettes
 ```
 Puis, pour compiler et installer les jar’s nécessaire pour faire fonctionner l’API, utilisez la commande : 
 ```
@@ -46,7 +46,7 @@ On peut donc maintenant lancer Eclipse. Pour commencer, vérifiez que vous êtes
 
 On peut ensuite importer le projet dans Eclipse, pour cela il faut utiliser le menu *"File > Import > Existing Maven Projects"*
 
-Pour lancer l'API, clic droit sur le projet, puis *"Run as > Java Application>"* puis choisir *ApiRechercheApplication* dans *Matching items*.
+Pour lancer l'API, clic droit sur le projet, puis *"Run as > Java Application>"* puis choisir *ApiRecettesApplication* dans *Matching items*.
 
 ## 3- Utilisation de l'API
 
