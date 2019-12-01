@@ -85,6 +85,7 @@ CREATE TABLE `recette` (
   `preparation` longtext,
   `ingredients` longtext,
   `niveau` varchar(200) DEFAULT NULL,
+  `image` longtext,
   PRIMARY KEY (`id_recette`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8
 ```
